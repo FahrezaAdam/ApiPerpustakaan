@@ -1,0 +1,6 @@
+@ApiPerpustakaan_HostAddress = http://localhost:5281
+
+GET {{ApiPerpustakaan_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
