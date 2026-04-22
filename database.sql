@@ -26,7 +26,6 @@ CREATE TABLE peminjaman (
     id_anggota INT NOT NULL,
     tanggal_pinjam DATE NOT NULL,
     tanggal_kembali DATE NULL,
-    -- PostgreSQL menggunakan CHECK constraint sebagai alternatif sederhana ENUM
     status_pinjam VARCHAR(20) DEFAULT 'Dipinjam' CHECK (status_pinjam IN ('Dipinjam', 'Dikembalikan')),
     dibuat_pada TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     diperbarui_pada TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
